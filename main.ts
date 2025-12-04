@@ -171,5 +171,5 @@ controller.moveSprite(fire_paw, 100, 100)
 scene.cameraFollowSprite(fire_paw)
 for (let value of tiles.getTilesByType(assets.tile`myTile1`)) {
     fire_paw.setPosition(value.x, value.y)
-    tiles.setTileAt(tiles.getTileLocation(value.x, value.y), assets.tile`transparency16`)
+    tiles.setTileAt(value, assets.tile`transparency16`)
 }
